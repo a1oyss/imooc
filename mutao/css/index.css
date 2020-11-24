@@ -130,6 +130,7 @@
     width: 200px;
     background-color: #F01414;
     color: #f3f5f7;
+    z-index:999;
 }
 
 .nav .nav-list .item {
@@ -171,4 +172,73 @@
     color: #f01414;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    height: 540px;
+}
+
+.banner-img {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 720px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.banner-img img {
+    width: 720px;
+    height: 550px;
+}
+
+.banner-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 250px;
+    border: 1px solid #ccc;
+}
+
+.banner-sidebar .sidebar .news .news-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+}
+
+.banner-sidebar .sidebar .news .news-list {
+    margin: 0 10px;
+    line-height: 34px;
+}
+
+.serve {
+    display: grid;
+    grid-template-rows: 65px 65px 65px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.serve .serve-item {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    
+}
+.serve .serve-item:nth-child(4),
+.serve .serve-item:nth-child(8),
+.serve .serve-item:nth-child(12){
+    border-right: none;
+}
+.serve .serve-item a{
+    display: block;
+    padding: 20px;
+}
+.serve .serve-item img{
+    display: block;
+    width: 20px;
+    height: 20px;
+
+}
+.banner .ad img{
+    width: 249px;
+    height: 152px;
 }
